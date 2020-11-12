@@ -180,7 +180,7 @@ def implement_perceptron(train_data: pd.DataFrame, train_label: np.array,
             testScore = accuracy_score(test_label, test_pred)
             trainScore = accuracy_score(train_label, train_pred)
 
-            print("iteration-{} {} {}".format(i+1, trainScore, testScore))
+            print("iteration-{} {} {}".format(i+1, trainScore, testScore), file=f)
 
 
 if __name__ == "__main__":
